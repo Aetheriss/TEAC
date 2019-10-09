@@ -30,6 +30,9 @@ void majEndAuthTrain(Ttrainsline * enstrains);
 
 int main()
 {
-   printf("0 - Affichage du RBC");
+    printf("0 - Affichage du RBC");
+    printf("1 - Ajouter un train au RBC");
+
     return 0;
+
 }
