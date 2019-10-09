@@ -30,6 +30,6 @@ void majEndAuthTrain(Ttrainsline * enstrains);
 
 int main()
 {
-   
+   printf("0 - Affichage du RBC");
     return 0;
 }
