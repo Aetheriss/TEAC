@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-// cd "C:\Users\Utiisateur\Documents\Centrale Lille\#Electifs d'intégration\Système de Transport Autonome (STA)\Travail"
 
 typedef struct RBC {
     int n = 100; //Définit la taille d'une ligne ici fixée à 100
