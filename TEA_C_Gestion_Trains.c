@@ -29,8 +29,37 @@ void majEndAuthTrain(Ttrainsline * enstrains);
 
 int main()
 {
-    printf("0 - Affichage du RBC");
-    printf("1 - Ajouter un train au RBC");
+    int choixMenu;
+    
+    printf("1 - Ajouter un train au RBC\n");
+    printf("2 - Suppresion d'un train au RBC\n");
+    printf("3 - Mise à jour de la position du train\n");
+    printf("4 - Lecture de la fin d'authorisation de mouvement du train\n");
+    printf("5 - Mise à jour de la fin d'authorisation de mouvement du train\n");
+
+  scanf("%d", &choixMenu);
+  
+  printf("\n");
+  
+  switch (choixMenu)
+  {
+    case 1:
+       saveTrain(Ttrainsline * enstrains);
+       break;
+    case 2:
+       delTrain(Ttrainsline * enstrains);
+       break;
+    case 3:
+       majTrain(Ttrainsline * enstrains, double newPos);
+       break;
+    case 4:
+       readEndAuthTrain(Ttrainsline * enstrains);
+       break;
+    default:
+       printf("Vous n'avez pas rentre un nombre correct. Vous ne mangerez rien du tout !");
+       break;
+  }
+  
 
     return 0;
 
